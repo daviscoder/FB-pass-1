@@ -5,10 +5,7 @@ public:
     void sortColors(vector<int>& nums) {
         int left = 0, right = nums.size() - 1, i = 0;
         while (i <= right) {
-            if (i == left && nums[i] == 0) {
-                i++;
-            }
-            else if (nums[i] == 0) {
+            if (nums[i] == 0 && i != left) {
                 swap (nums[i], nums[left]);
                 left++;
             }

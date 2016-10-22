@@ -1,4 +1,4 @@
-// O(2^n)
+// O(2^n) * k
 
 class Solution {
 public:
